@@ -81,6 +81,10 @@ public class GameIAPManager : MonoBehaviour, IStoreListener
     public void OnPurchaseFailed(Product i, PurchaseFailureReason p)
     {
     }
+    public void OnPurchaseOnComplete(Product i)
+    {
+        Utils.SaveRemoveAds();
+    }
 
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs e)
     {

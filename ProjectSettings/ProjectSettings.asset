@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: PlayBit Studio
-  productName: Hero Rescue - Pull the Pin
+  companyName: S Studio
+  productName: Hero Rescue
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -167,7 +167,7 @@ PlayerSettings:
   buildNumber: {}
   AndroidBundleVersionCode: 6
   AndroidMinSdkVersion: 19
-  AndroidTargetSdkVersion: 29
+  AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -258,15 +258,15 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/user/Desktop/rescue_keystore.keystore
-  AndroidKeyaliasName: rescue hero pull the pin
+  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeyaliasName: 123456
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 0
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -778,10 +778,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: a2c3bdc1-15ba-4cc3-942e-f58b4f0f6cd8
+  cloudProjectId: c17f41f0-ca38-4f03-8511-86a5be5a6847
   framebufferDepthMemorylessMode: 0
-  projectName: Rescue Hero
-  organizationId: kien261193
+  projectName: Hero Rescue - Pull the Pin (4)
+  organizationId: trankhanhlc99
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

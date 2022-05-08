@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance;
     public GameObject effectDie;
     public enum P_STATE { PLAYING, DIE, WIN, RUNNING }
-
+    public int test = 0;
     [HideInInspector] public bool isReadOnly = true;
 
     [DrawIf("isReadOnly", true, ComparisonType.Equals, DisablingType.ReadOnly)]
@@ -111,6 +111,9 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator ISShowWin()
     {
+        AdsManager.Instance.ShowInterstitial(null);
+        GlobalEventManager.Instance.OnLevelWin(GameManager.countpasslevel);
+        Debug.LogError("====ISShowWin=====");
         yield return new WaitForSeconds(0.5f);
         if (!saPlayer.AnimationName.Equals(str_Lose) || pState != P_STATE.DIE)
         {
@@ -120,7 +123,7 @@ public class PlayerManager : MonoBehaviour
             else
             {
                 PlayAnim(str_Win, true);
-                Debug.LogError("====sdkahfjkd=====");
+            
             }
         }
         yield return new WaitForSeconds(0.5f);
@@ -425,6 +428,9 @@ public class PlayerManager : MonoBehaviour
     }
     public void OnPlayerDie(bool effect)
     {
+        AdsManager.Instance.ShowInterstitial(null);
+        test = -100000;
+        GlobalEventManager.Instance.OnLevelLose(GameManager.countpasslevel);
         if (GameManager.Instance.gameState != GameManager.GAMESTATE.WIN)
         {
             pState = P_STATE.DIE;

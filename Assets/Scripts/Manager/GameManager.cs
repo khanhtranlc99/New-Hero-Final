@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(IEWaitToShowWinLose(true));
     }
     public int enemyKill;
-    static int countpasslevel;
+    public static int countpasslevel;
     private IEnumerator IEWaitToShowWinLose(bool isWin)
     {
         yield return new WaitForSeconds(0.5f);
@@ -197,7 +197,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (Utils.LEVEL_INDEX >= DataParam.levelpassshowad)
                     {
-                        AdsManager.Instance.ShowInterstitial(null);
+                      
                         DataParam.firsttime = 1;
                         Debug.LogError("========show ads TH 1");
                     }
@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour
                     {
                         countpasslevel = 0;
                         DataParam.oldTimeShowAds = System.DateTime.Now;
-                        AdsManager.Instance.ShowInterstitial(null);
+                     
                     }
                     Debug.LogError("========show ads TH 2");
                 }

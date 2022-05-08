@@ -43,17 +43,20 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: ba7db8637d60ee64ab5f85487a780b62, type: 3}
-    totalSpriteSurfaceArea: 8828388
+    totalSpriteSurfaceArea: 11292220
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: d6aa6900884384e48b77d42ac6596ca6, type: 3}
   - {fileID: 21300000, guid: 87c9ae009c7470347b18ce24e193b576, type: 3}
+  - {fileID: 21300000, guid: fecda440433894346ae8543c3d3cbfba, type: 3}
   - {fileID: 21300000, guid: 8518e45022a0610449a9e37e2559290b, type: 3}
   - {fileID: 21300000, guid: 610ee490b55ce7d4aa18a8ab97b12e07, type: 3}
   - {fileID: 21300000, guid: 9ee9adf00b6d58d458b58ebed5fbe7d9, type: 3}
   - {fileID: 21300000, guid: 37ad7101bf096664188ebe40d56b17cb, type: 3}
   - {fileID: 21300000, guid: 98382a2147efc1a45837e18cb1253472, type: 3}
+  - {fileID: 21300000, guid: 91b088510c1cc734a8099a108ae84065, type: 3}
+  - {fileID: 21300000, guid: 9360f8515daa6334c9bebf1642d3ac41, type: 3}
   - {fileID: 21300000, guid: befec1c1fd4889a49980ffd8c1db3028, type: 3}
   - {fileID: 21300000, guid: 4dc986c1550f52b439fd9868f55dd68d, type: 3}
   - {fileID: 21300000, guid: be534ac1782787a469ed657017689bbc, type: 3}
@@ -61,6 +64,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c834e3224c2a501489d2de59184cb5f1, type: 3}
   - {fileID: 21300000, guid: 46b595523af8a964aa586aed2a15d799, type: 3}
   - {fileID: 21300000, guid: 422f3072663b84e4e9b243e22ef8bc62, type: 3}
+  - {fileID: 21300000, guid: a24b45e2bb39ad04cacaec0b4a6183f4, type: 3}
   - {fileID: 21300000, guid: d4cc56f2a8a3fe9409aa8bf1f5546bc4, type: 3}
   - {fileID: 21300000, guid: 28119083c38d07941be30667c08c4ec5, type: 3}
   - {fileID: 21300000, guid: 2b4db9934a8189a48a16fad0a4c80612, type: 3}
@@ -68,6 +72,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cddb06f3f7b1cf540b1310ea9ff11c22, type: 3}
   - {fileID: 21300000, guid: f4bb1204ecdaa934c8d9a089233d2d79, type: 3}
   - {fileID: 21300000, guid: 62192404165936f44b608feff0b85c29, type: 3}
+  - {fileID: 21300000, guid: ed0605043eb890d4caa98104fed87343, type: 3}
   - {fileID: 21300000, guid: b95321745bb062b4fa55dea53b81d093, type: 3}
   - {fileID: 21300000, guid: 3b36dde41d12ef84098409a17a8385c7, type: 3}
   - {fileID: 21300000, guid: 48effe6570ff4d348b0faf03323c883f, type: 3}
@@ -87,8 +92,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e6021ec86ba245a4597d587cf03855e7, type: 3}
   - {fileID: 21300000, guid: 33d5f8091b5b2b8439fe12d112fae82c, type: 3}
   - {fileID: 21300000, guid: 2f135e697b302bc46a0528e8b3af3e4e, type: 3}
+  - {fileID: 21300000, guid: fa6ef4791cad3044eb0ec0bfd544ee65, type: 3}
   - {fileID: 21300000, guid: 601c8b99bac79364298ccc8406cc17fd, type: 3}
-  - {fileID: 21300000, guid: 022b7e5a485180345ba2eb0304a7ac27, type: 3}
+  - {fileID: 21300000, guid: fa13bb5a5db54bc4ebda8252554b6407, type: 3}
   - {fileID: 21300000, guid: 11a8858a85d33874e881c15995256025, type: 3}
   - {fileID: 21300000, guid: 5f9e23baf5de6a24390a6be3c0635743, type: 3}
   - {fileID: 21300000, guid: dc086bea910adb649a20114da5779571, type: 3}
@@ -101,18 +107,21 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8910b3fd3b536534c8e4f20d18a30430, type: 3}
   - {fileID: 21300000, guid: 807a263e6a9ed54449ebfbc55cf5aede, type: 3}
   - {fileID: 21300000, guid: f8eb1f5e54d1eb7489bfdfc36f609979, type: 3}
+  - {fileID: 21300000, guid: 1f323a0f28f5f8643a076ee2cae20319, type: 3}
   - {fileID: 21300000, guid: e0a2f72f0b158cd4a91b11e6d19babce, type: 3}
-  - {fileID: 21300000, guid: 2d11de2f610cc804c88c23a84db76b6e, type: 3}
   - {fileID: 21300000, guid: 244cbd4fa02cd3040b70477fe5eb3a53, type: 3}
   - {fileID: 21300000, guid: a61c49cfb0d52014ca052a888cdbd52d, type: 3}
   m_PackedSpriteNamesToIndex:
   - Play WallX4
   - Play Moc2
+  - Layer 8
   - Play Wall Round3
   - Play Moc5
   - BG1
   - Play Wall Round1
   - Play Gold3
+  - sand-castle
+  - go-back-arrow
   - Trap2
   - Btn_Skip
   - Play Moc4
@@ -120,6 +129,7 @@ SpriteAtlas:
   - lose
   - Btn_Home
   - Treasure_quest
+  - Layer 9
   - arrow_enemy
   - monster_quest
   - Play Gold1
@@ -127,6 +137,7 @@ SpriteAtlas:
   - 1
   - 4
   - Gold_Quest
+  - Layer 7
   - Play WallX3
   - 2
   - Play Rope
@@ -146,8 +157,9 @@ SpriteAtlas:
   - StickBarrie2
   - winpng
   - Play Gold4
+  - YOU WIN
   - lava
-  - Quest_bar
+  - Layer 10
   - Trap3
   - Play WallX5
   - Btn_Replay
@@ -160,8 +172,8 @@ SpriteAtlas:
   - Floor
   - Play Sword
   - Play Wall Round2
+  - Quest_bar
   - Play WallX1
-  - Play Button_ADS2
   - Play Moc1
   - Play Object4
   m_Tag: Ingame

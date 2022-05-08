@@ -9,7 +9,7 @@ public class AdsManager : MonoBehaviour
 {
     public static AdsManager Instance;
     private Action<bool> acInterClosed, acRewarded;
-
+    public string testParam;
     #region Admob
     private InterstitialAd interstitial;
     private RewardedAd rewardedAd;
@@ -82,7 +82,8 @@ public class AdsManager : MonoBehaviour
     }
     public void ShowInterstitial(Action<bool> _ac)
     {
-        if (!Utils.isRemoveAds) {
+        if (!Utils.isRemoveAds)
+        {
             if (IsIntersLoaded())
             {
                 acInterClosed = _ac;
@@ -95,8 +96,15 @@ public class AdsManager : MonoBehaviour
                 if (acInterClosed != null)
                     acInterClosed(true);
             }
+            testParam = "ShowAds";
         }
+        else
+        {
+            testParam = "DaMuaRemoveAds";
+        }
+    
     }
+    #region Test Method
     public void ShowInterstitial22()
     {
         if (IsIntersLoaded())
@@ -128,6 +136,7 @@ public class AdsManager : MonoBehaviour
            
         }
     }
+    #endregion
     public void ShowRewardedVideo(Action<bool> _ac)
     {
         if (IsRewardLoaded())
