@@ -111,7 +111,7 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator ISShowWin()
     {
-        AdsManager.Instance.ShowInterstitial(null);
+      
         GlobalEventManager.Instance.OnLevelWin(GameManager.countpasslevel);
         Debug.LogError("====ISShowWin=====");
         yield return new WaitForSeconds(0.5f);
@@ -128,7 +128,7 @@ public class PlayerManager : MonoBehaviour
         }
         yield return new WaitForSeconds(0.5f);
         MapLevelManager.Instance.OnWin();
-
+        AdsManager.Instance.ShowInterstitial(null);
     }
 
     const float timeConst = 2;
@@ -428,7 +428,7 @@ public class PlayerManager : MonoBehaviour
     }
     public void OnPlayerDie(bool effect)
     {
-        AdsManager.Instance.ShowInterstitial(null);
+       
         test = -100000;
         GlobalEventManager.Instance.OnLevelLose(GameManager.countpasslevel);
         if (GameManager.Instance.gameState != GameManager.GAMESTATE.WIN)
@@ -451,6 +451,7 @@ public class PlayerManager : MonoBehaviour
             PlayAnim(str_Lose, false);
             StartCoroutine(IEWait(effect));
         }
+        AdsManager.Instance.ShowInterstitial(null);
     }
     IEnumerator IEWait(bool effect)
     {

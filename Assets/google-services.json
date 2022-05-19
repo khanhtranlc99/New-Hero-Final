@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1061446712835",
-    "project_id": "hero-rescue-38501",
-    "storage_bucket": "hero-rescue-38501.appspot.com"
+    "project_number": "106830007116",
+    "project_id": "hero-rescue-1fd42",
+    "storage_bucket": "hero-rescue-1fd42.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1061446712835:android:a4ea2b19d61cc4ed159836",
+        "mobilesdk_app_id": "1:106830007116:android:8d2a5f0933ffd043909de9",
         "android_client_info": {
-          "package_name": "com.hero.rescue.pull.the.pin.puzzle.free.action"
+          "package_name": "com.S_Studio.Hero_Rescue"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1061446712835-4d9hhtr5vcqnai86sbhtkh0toavsvg5r.apps.googleusercontent.com",
+          "client_id": "106830007116-mi1uo33v9n7tcsnlh5lemug7dj1bpanm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC8wQzAnNIHexnyeGvlyNxyEB7e8fV8kFU"
+          "current_key": "AIzaSyA2aC0OBXW0QE3XEva1EA2Wfhj86rQjG38"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1061446712835-4d9hhtr5vcqnai86sbhtkh0toavsvg5r.apps.googleusercontent.com",
+              "client_id": "106830007116-mi1uo33v9n7tcsnlh5lemug7dj1bpanm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

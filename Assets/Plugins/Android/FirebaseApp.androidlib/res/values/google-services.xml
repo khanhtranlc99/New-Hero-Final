@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
-  <string name="gcm_defaultSenderId" translatable="false">1061446712835</string>
-  <string name="google_storage_bucket" translatable="false">hero-rescue-38501.appspot.com</string>
-  <string name="project_id" translatable="false">hero-rescue-38501</string>
-  <string name="google_api_key" translatable="false">AIzaSyC8wQzAnNIHexnyeGvlyNxyEB7e8fV8kFU</string>
-  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC8wQzAnNIHexnyeGvlyNxyEB7e8fV8kFU</string>
-  <string name="google_app_id" translatable="false">1:1061446712835:android:a4ea2b19d61cc4ed159836</string>
-  <string name="default_web_client_id" translatable="false">1061446712835-4d9hhtr5vcqnai86sbhtkh0toavsvg5r.apps.googleusercontent.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">106830007116</string>
+  <string name="google_storage_bucket" translatable="false">hero-rescue-1fd42.appspot.com</string>
+  <string name="project_id" translatable="false">hero-rescue-1fd42</string>
+  <string name="google_api_key" translatable="false">AIzaSyA2aC0OBXW0QE3XEva1EA2Wfhj86rQjG38</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA2aC0OBXW0QE3XEva1EA2Wfhj86rQjG38</string>
+  <string name="google_app_id" translatable="false">1:106830007116:android:8d2a5f0933ffd043909de9</string>
+  <string name="default_web_client_id" translatable="false">106830007116-mi1uo33v9n7tcsnlh5lemug7dj1bpanm.apps.googleusercontent.com</string>
 </resources>
