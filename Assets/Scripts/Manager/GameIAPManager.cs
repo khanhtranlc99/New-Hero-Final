@@ -24,29 +24,29 @@ public class GameIAPManager : MonoBehaviour, IStoreListener
 
     private void InitIAP()
     {
-        var module = StandardPurchasingModule.Instance();
-        ConfigurationBuilder builder = ConfigurationBuilder.Instance(module);
+        //var module = StandardPurchasingModule.Instance();
+        //ConfigurationBuilder builder = ConfigurationBuilder.Instance(module);
 
-        var catalog = ProductCatalog.LoadDefaultCatalog();
-        foreach (var product in catalog.allValidProducts)
-        {
-            if (product.allStoreIDs.Count > 0)
-            {
-                var ids = new IDs();
-                foreach (var storeID in product.allStoreIDs)
-                {
-                    ids.Add(storeID.id, storeID.store);
-                }
-                builder.AddProduct(product.id, product.type, ids);
-            }
-            else
-            {
-                builder.AddProduct(product.id, product.type);
-            }
-        }
+        //var catalog = ProductCatalog.LoadDefaultCatalog();
+        //foreach (var product in catalog.allValidProducts)
+        //{
+        //    if (product.allStoreIDs.Count > 0)
+        //    {
+        //        var ids = new IDs();
+        //        foreach (var storeID in product.allStoreIDs)
+        //        {
+        //            ids.Add(storeID.id, storeID.store);
+        //        }
+        //        builder.AddProduct(product.id, product.type, ids);
+        //    }
+        //    else
+        //    {
+        //        builder.AddProduct(product.id, product.type);
+        //    }
+        //}
 
 
-        UnityPurchasing.Initialize(this, builder);
+        //UnityPurchasing.Initialize(this, builder);
     }
 
     private bool IsInitialized()

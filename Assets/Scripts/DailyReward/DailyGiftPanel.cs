@@ -89,38 +89,38 @@ public class DailyGiftPanel : MonoBehaviour
     public void TakeX2Gift(int _index) {
 
 
-        AdsManager.Instance.ShowRewardedVideo((b) =>
-        {
-            if (b) {
-                Utils.HasClaimReward();
+        //AdsManager.Instance.ShowRewardedVideo((b) =>
+        //{
+        //    if (b) {
+        //        Utils.HasClaimReward();
 
-                switch (_index)
-                {
-                    case 1:
-                        AddCoin(3000);
-                        break;
-                    case 2:
-                        AddCoin(6000);
-                        break;
-                    case 3:
-                        AddCoin(9000);
-                        break;
-                    case 4:
-                        AddCoin(12000);
-                        break;
-                    case 5:
-                        AddCoin(15000);
-                        break;
-                    case 6:
-                        AddCoin(18000);
-                        break;
-                }
-            }
-            Utils.SaveCoin();
-            Utils.SaveDailyGift();
-            DisplayAgain();
-         //   MyAnalytic.EventReward("x2_dailygift");
-        });
+        //        switch (_index)
+        //        {
+        //            case 1:
+        //                AddCoin(3000);
+        //                break;
+        //            case 2:
+        //                AddCoin(6000);
+        //                break;
+        //            case 3:
+        //                AddCoin(9000);
+        //                break;
+        //            case 4:
+        //                AddCoin(12000);
+        //                break;
+        //            case 5:
+        //                AddCoin(15000);
+        //                break;
+        //            case 6:
+        //                AddCoin(18000);
+        //                break;
+        //        }
+        //    }
+        //    Utils.SaveCoin();
+        //    Utils.SaveDailyGift();
+        //    DisplayAgain();
+        // //   MyAnalytic.EventReward("x2_dailygift");
+        //});
       //  OnClosePanel();
     }
     public void TakeSpecialGift() {

@@ -117,7 +117,6 @@
     <Compile Include="Assets\Scripts\KienCode\Unit.cs" />
     <Compile Include="Assets\Scripts\LevelConfig.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuController.cs" />
-    <Compile Include="Assets\Scripts\Manager\AdsManager.cs" />
     <Compile Include="Assets\Scripts\Manager\CharsBase.cs" />
     <Compile Include="Assets\Scripts\Manager\Enemy\EnemyBase.cs" />
     <Compile Include="Assets\Scripts\Manager\Enemy\EnemyManager.cs" />
@@ -136,9 +135,6 @@
     <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Manager\Sword.cs" />
     <Compile Include="Assets\Scripts\Manager\TouchManager.cs" />
-    <Compile Include="Assets\Scripts\MyFireBase\AppConfig.cs" />
-    <Compile Include="Assets\Scripts\MyFireBase\FirebaseManager.cs" />
-    <Compile Include="Assets\Scripts\MyFireBase\GlobalEventManager.cs" />
     <Compile Include="Assets\Scripts\Rope\RopeManager.cs" />
     <Compile Include="Assets\Scripts\Rope\RopeNode.cs" />
     <Compile Include="Assets\Scripts\Setting\SettingPanel.cs" />
@@ -488,57 +484,6 @@
     </Reference>
     <Reference Include="Unity.Tasks">
       <HintPath>D:/MyProject/NewHeroFinal/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="UDP">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UDP/UDP.dll</HintPath>
-    </Reference>
-    <Reference Include="Editor">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Stores">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="Apple">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
-    </Reference>
-    <Reference Include="AppleCore">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
-    </Reference>
-    <Reference Include="AppleMacos">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
-    </Reference>
-    <Reference Include="FacebookStore">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
-    </Reference>
-    <Reference Include="Security">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Tizen">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
-    </Reference>
-    <Reference Include="winrt">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Analytics">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.analytics@20c3f3e5df54-1645628298981/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Platform">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.MiniJson">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Google.MiniJson.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.RemoteConfig">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.remote-config@4905ce5d722a-1645628292677/Firebase/Plugins/Firebase.RemoteConfig.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
@@ -908,21 +853,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0B26D663-7DF3-8A3B-328E-5F4E6E1B62ED}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{F9FA8814-E249-AC8B-76B0-3163A2331B03}</Project>
       <Name>spine-unity</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{66A79F94-5082-F755-8D38-9F45984CE256}</Project>
-      <Name>GoogleMobileAds</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{3D3C864C-35C3-84BE-4298-C3B9DC3040EE}</Project>
-      <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{2A0AD428-BBE0-BFA1-7A42-C23FEE00FF6B}</Project>

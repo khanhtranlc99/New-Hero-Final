@@ -84,10 +84,10 @@ public class GameManager : MonoBehaviour
         {
             SoundManager.Instance.PlayBackgroundMusic();
         }
-        if (AdsManager.Instance != null)
-        {
-            AdsManager.Instance.ShowBanner();
-        }
+        //if (AdsManager.Instance != null)
+        //{
+        //    AdsManager.Instance.ShowBanner();
+        //}
         CheckDisplayWarningAchievement();
 
      //   MyAnalytic.EventLevelStart(Utils.LEVEL_INDEX + 1);
@@ -118,10 +118,10 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        if (AdsManager.Instance != null)
-        {
-            AdsManager.Instance.HideBanner();
-        }
+        //if (AdsManager.Instance != null)
+        //{
+        //    AdsManager.Instance.HideBanner();
+        //}
     }
 
     private void LoadLevelToPlay(int realLevelIndex)
@@ -150,10 +150,10 @@ public class GameManager : MonoBehaviour
     private IEnumerator IEWaitToShowWinLose(bool isWin)
     {
         yield return new WaitForSeconds(0.5f);
-        if (AdsManager.Instance != null)
-        {
-            AdsManager.Instance.HideBanner();
-        }
+        //if (AdsManager.Instance != null)
+        //{
+        //    AdsManager.Instance.HideBanner();
+        //}
         if (isWin)
         {
 
@@ -291,48 +291,18 @@ public class GameManager : MonoBehaviour
     }
     public void OnX2Coin()
     {
-#if UNITY_EDITOR
+
         Utils.currentCoin *= 3 /** Utils.BASE_COIN*/;
         OnUpdateCoin();
         OnNextLevel();
-#else
-                if (AdsManager.Instance != null)
-        {
-            AdsManager.Instance.ShowRewardedVideo((b) =>
-            {
-                if (b)
-                {
-                    Utils.currentCoin += 3 * Utils.BASE_COIN;
-                    OnUpdateCoin();
-                    OnNextLevel();
-            //        MyAnalytic.EventReward("x3_reward_win");
-                }
-            });
-        }
-#endif
-        //    Debug.LogError("X2 Coin");
+
 
     }
     public void OnSkipByVideo()
     {
 
-#if UNITY_EDITOR
-        OnNextLevel();
-#else
 
-        if (AdsManager.Instance != null)
-        {
-            Debug.Log("[Ads] Manager diffirent null");
-            AdsManager.Instance.ShowRewardedVideo((b) =>
-            {
-                if (b)
-                {
-                    OnNextLevel();
-       //   MyAnalytic.EventReward("skip_level_" + (Utils.LEVEL_INDEX + 1));
-                }
-            });
-        }
-#endif
+        OnNextLevel();
 
     }
     public void OnReplay()

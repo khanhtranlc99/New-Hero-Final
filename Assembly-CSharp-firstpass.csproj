@@ -374,24 +374,6 @@
     <Reference Include="winrt">
       <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Analytics">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.analytics@20c3f3e5df54-1645628298981/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Platform">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.MiniJson">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Google.MiniJson.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.RemoteConfig">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.remote-config@4905ce5d722a-1645628292677/Firebase/Plugins/Firebase.RemoteConfig.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
     </Reference>

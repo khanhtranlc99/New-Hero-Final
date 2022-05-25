@@ -64,11 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GoogleMobileAds\Editor\AndroidBuildPostProcessor.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Editor\BuildPreProcessor.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsSettings.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsSettingsEditor.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\ManifestProcessor.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\PListProcessor.cs" />
+    <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsSKAdNetworkItems.xml" />
     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -286,75 +287,6 @@
     <Reference Include="Unity.Tasks">
       <HintPath>D:/MyProject/NewHeroFinal/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
-    <Reference Include="UDP">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UDP/UDP.dll</HintPath>
-    </Reference>
-    <Reference Include="Editor">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Stores">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="Apple">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
-    </Reference>
-    <Reference Include="AppleCore">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
-    </Reference>
-    <Reference Include="AppleMacos">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
-    </Reference>
-    <Reference Include="FacebookStore">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
-    </Reference>
-    <Reference Include="Security">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Tizen">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
-    </Reference>
-    <Reference Include="winrt">
-      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.external-dependency-manager@b8e770595da9-1645628233640/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.IOSResolver">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.external-dependency-manager@b8e770595da9-1645628233640/ExternalDependencyManager/Editor/1.2.169/Google.IOSResolver.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.JarResolver">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.external-dependency-manager@b8e770595da9-1645628233640/ExternalDependencyManager/Editor/1.2.169/Google.JarResolver.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.PackageManagerResolver">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.external-dependency-manager@b8e770595da9-1645628233640/ExternalDependencyManager/Editor/1.2.169/Google.PackageManagerResolver.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandlerImpl">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.external-dependency-manager@b8e770595da9-1645628233640/ExternalDependencyManager/Editor/1.2.169/Google.VersionHandlerImpl.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Analytics">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.analytics@20c3f3e5df54-1645628298981/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Editor">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Editor/Firebase.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.App.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Platform">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.MiniJson">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.app@ac0d8ab616ff-1645628481519/Firebase/Plugins/Google.MiniJson.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.RemoteConfig">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.google.firebase.remote-config@4905ce5d722a-1645628292677/Firebase/Plugins/Firebase.RemoteConfig.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.ads@3.4.5/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -372,6 +304,33 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/ExternalDependencyManager/Editor/1.2.169/Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/ExternalDependencyManager/Editor/1.2.169/Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/ExternalDependencyManager/Editor/1.2.169/Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/ExternalDependencyManager/Editor/1.2.169/Google.IOSResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -730,12 +689,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Unity2020.3.15f2/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{66A79F94-5082-F755-8D38-9F45984CE256}</Project>
-      <Name>GoogleMobileAds</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
