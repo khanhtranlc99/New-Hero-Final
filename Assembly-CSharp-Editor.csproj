@@ -464,6 +464,12 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="AppleCore">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AppleMacos">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>

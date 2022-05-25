@@ -101,11 +101,11 @@
     <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
     <None Include="Assets\Spine\Editor\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
@@ -400,6 +400,12 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="AppleCore">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AppleMacos">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

@@ -73,10 +73,12 @@
     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPDemoProductUI.cs" />
     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPListener.cs" />
     <Compile Include="Assets\Plugins\UnityPurchasing\script\PurchasingCheck.cs" />
-    <None Include="Assets\Plugins\Android\FirebaseApp.androidlib\res\values\google-services.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\FirebaseApp.androidlib\res\values\google-services.xml" />
     <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\UnityPurchasing\license.txt" />
+    <None Include="Assets\Plugins\UnityPurchasing\third party notices.txt" />
     <None Include="Assets\Plugins\Android\FirebaseApp.androidlib\AndroidManifest.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/MyProject/NewHeroFinal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -395,6 +397,12 @@
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/MyProject/NewHeroFinal/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="AppleCore">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="AppleMacos">
+      <HintPath>D:/MyProject/NewHeroFinal/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Unity2020.3.15f2/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

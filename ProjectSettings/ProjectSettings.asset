@@ -165,7 +165,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.S_Studio.Hero_Rescue
   buildNumber: {}
-  AndroidBundleVersionCode: 7
+  AndroidBundleVersionCode: 9
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
@@ -258,7 +258,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeystoreName: D:/user.keystore
   AndroidKeyaliasName: 123456
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
@@ -778,10 +778,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: a2c3bdc1-15ba-4cc3-942e-f58b4f0f6cd8
+  cloudProjectId: 7437acd8-f208-440a-9b2b-032d76691595
   framebufferDepthMemorylessMode: 0
-  projectName: Rescue Hero
-  organizationId: kien261193
+  projectName: Hero Rescue (1)
+  organizationId: trankhanhlc99
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
