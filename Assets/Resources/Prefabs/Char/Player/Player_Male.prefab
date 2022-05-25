@@ -374,8 +374,8 @@ MonoBehaviour:
   str_OpenWithSword: open (kiem)
   str_MoveWithSword: run (kiem)
   str_Blink: nhay mat
-  skinDefault: 1
-  skinSword: kiem
+  skinDefault: Athur/Athur
+  skinSword: 1
   trSword: {fileID: 0}
   trSwordPos: {fileID: 3217830566619783008}
   isTakeSword: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 25e37ca615df27d44b84beb473c398ab, type: 2}
-  initialSkinName: 1
+  initialSkinName: Hercules/hercules
   initialFlipX: 0
   initialFlipY: 0
   separatorSlotNames: []

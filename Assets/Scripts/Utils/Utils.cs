@@ -13,9 +13,9 @@ public class Utils
 
     public const string INAPP_REMOVE_ADS = "com.hero.rescue.pull.the.pin.puzzle.free.action";
     public const string APP_ID = "ca-app-pub-4086455244504037~1986098610";
-    public const string BANNER_ID = "ca-app-pub-3940256099942544/6300978111";
-    public const string INTERS_ID = "ca-app-pub-3940256099942544/1033173712";
-    public const string VIDEO_ID = "ca-app-pub-3940256099942544/5224354917";
+    public const string BANNER_ID = "ca-app-pub-4086455244504037/4496257943";
+    public const string INTERS_ID = "ca-app-pub-4086455244504037/3183176275";
+    public const string VIDEO_ID = "ca-app-pub-4086455244504037/6930849594";
     public const int BASE_COIN = 100;
     private const string GAME_KEY = "com.hero.rescue.pull.the.pin.puzzle.free.action";
     public const string COIN_KEY = GAME_KEY + ".coin";

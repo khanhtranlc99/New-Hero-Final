@@ -55,14 +55,14 @@ public class PlayerManager : MonoBehaviour
             //saPlayer.LateUpdate();
 
             var skeleton = saPlayer.Skeleton;
-            var skeletonData = skeleton.Data;
-            var newSkin = new Skin("new-skin");
-            newSkin.AddSkin(skeletonData.FindSkin(DataController.instance.heroData.infos[DataParam.currentHero].nameSkin));
+            //var skeletonData = skeleton.Data;
+            //var newSkin = new Skin("new-skin");
+            //newSkin.AddSkin(skeletonData.FindSkin(DataController.instance.heroData.infos[DataParam.currentHero].nameSkin));
 
 
-            skeleton.SetSkin(newSkin);
-            skeleton.SetSlotsToSetupPose();
-            saPlayer.AnimationState.Apply(skeleton);
+            //skeleton.SetSkin(newSkin);
+            //skeleton.SetSlotsToSetupPose();
+            //saPlayer.AnimationState.Apply(skeleton);
         }
         //}
     }

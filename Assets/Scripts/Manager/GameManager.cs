@@ -197,8 +197,9 @@ public class GameManager : MonoBehaviour
                 {
                     if (Utils.LEVEL_INDEX >= DataParam.levelpassshowad)
                     {
-                        AdsManager.Instance.ShowInterstitial(null);
+                     
                         DataParam.firsttime = 1;
+                        AdsManager.Instance.ShowInterstitial(null);
                         Debug.LogError("========show ads TH 1");
                     }
                 }
@@ -275,16 +276,16 @@ public class GameManager : MonoBehaviour
             Utils.RealLevelIndex = levelIndex;
         }
 
-        /*        if (Utils.LEVEL_INDEX < levelConfig.lstAllLevel.Count - 1)
-                {
-                    Utils.LEVEL_INDEX += 1;
-                    Utils.SaveLevel();
-                }
-                else
-                {
-                    Utils.LEVEL_INDEX = 0;
-                    Utils.SaveLevel();
-                }*/
+        if (Utils.LEVEL_INDEX < levelConfig.lstAllLevel.Count - 1)
+        {
+            Utils.LEVEL_INDEX += 1;
+            Utils.SaveLevel();
+        }
+        else
+        {
+            Utils.LEVEL_INDEX = 0;
+            Utils.SaveLevel();
+        }
 
         ObjectPoolerManager.Instance.ClearAllPool();
         SceneManager.LoadSceneAsync("MainGame");
