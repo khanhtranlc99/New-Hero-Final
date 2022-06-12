@@ -8,7 +8,7 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
-
+    public string tessssssssssssst;
     public GameObject effectCamera, BtnReplay, bouderCoinFly, btnx3Coin, btnTabNext, phaohoa, btnReplay2, btnSkipLevelLose, warningAchievment;
     public Sprite winSp, loseSp;
     public PhysicsMaterial2D matStone;
@@ -200,8 +200,10 @@ public class GameManager : MonoBehaviour
                      
                         DataParam.firsttime = 1;
                         AdsManager.Instance.ShowInterstitial(null);
-                        Debug.LogError("========show ads TH 1");
+                  
                     }
+                    tessssssssssssst = "========show ads TH 2 win" + Utils.LEVEL_INDEX + 1;
+                    Debug.LogError("========show ads TH 1 lose");
                 }
                 else
                 {
@@ -212,10 +214,12 @@ public class GameManager : MonoBehaviour
                         DataParam.oldTimeShowAds = System.DateTime.Now;
                         AdsManager.Instance.ShowInterstitial(null);
                     }
-                    Debug.LogError("========show ads TH 2");
+                
                 }
-            //    MyAnalytic.EventLevelCompleted(Utils.LEVEL_INDEX + 1);
+                //    MyAnalytic.EventLevelCompleted(Utils.LEVEL_INDEX + 1);
             }
+            tessssssssssssst = "========show ads TH 2 win" + Utils.LEVEL_INDEX + 1;
+            Debug.LogError("========show ads TH 2 win");
         }
         else
         {
@@ -226,12 +230,16 @@ public class GameManager : MonoBehaviour
                 gPanelWin.gameObject.SetActive(true);
                 effectCamera.SetActive(false);
                 LoseDisplay();
-             //   countpasslevel = 0;
+                print("========show ads TH 1 lose");
+                tessssssssssssst = "========show ads TH 1 lose " + Utils.LEVEL_INDEX + 1;
+                //   countpasslevel = 0;
                 if (SoundManager.Instance != null)
                 {
                     SoundManager.Instance.PlaySound(SoundManager.Instance.acLose);
                 }
-               // MyAnalytic.EventLevelFailed(Utils.LEVEL_INDEX + 1);
+               // GlobalEventManager.Instance.OnLevelLose();
+                AdsManager.Instance.ShowInterstitial(null);
+                // MyAnalytic.EventLevelFailed(Utils.LEVEL_INDEX + 1);
             }
         }
     }
