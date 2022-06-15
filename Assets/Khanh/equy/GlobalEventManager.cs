@@ -1,12 +1,14 @@
 ﻿using System;
+#if USE_FIREBASE
 using Firebase.Analytics;
+#endif
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GlobalEventManager : MonoBehaviour
 {
-    #region Instance
+#region Instance
 
     private static GlobalEventManager instance;
 
@@ -28,10 +30,12 @@ public class GlobalEventManager : MonoBehaviour
     }
     public static bool Exist => instance;
 
-    #endregion
+#endregion
 
-    #region Events
+#region Events
+#if USE_FIREBASE
     public Action<string, Parameter[]> EvtSendEvent;
+#endif
     public Action EvtDelayJump;
     public Action EvtDisableMagnet;
     public Action EvtUpdateUserProperties;
@@ -43,11 +47,12 @@ public class GlobalEventManager : MonoBehaviour
     public Action<bool> EvtPickupChestKey;
     public Action<bool> EvtOnSwitch;
 
-    
 
-    #endregion
 
-    #region Tracking Level
+#endregion
+
+#region Tracking Level
+#if USE_FIREBASE
     public void OnLevelWin(int level)
     {
         Parameter[] pa = new Parameter[]
@@ -96,21 +101,27 @@ public class GlobalEventManager : MonoBehaviour
     {
         EvtSendEvent?.Invoke($"z_play_level_{level}", null);
     }
-    #endregion Tracking Level
+#endif
+#endregion Tracking Level
 
-    #region Tracking Loading
+#region Tracking Loading
     public void OnLoadingStart()
     {
+#if USE_FIREBASE
         EvtSendEvent?.Invoke("Loading_Start", null);
+#endif
     }
 
     public void OnLoadingEnd()
     {
+#if USE_FIREBASE
         EvtSendEvent?.Invoke("Loading_End", null);
+#endif
     }
-    #endregion Tracking Loading
+#endregion Tracking Loading
 
-    #region Tracking ADS
+#region Tracking ADS
+#if USE_FIREBASE
     public void OnInterLoad()
     {
         EvtSendEvent?.Invoke("ad_inter_load", null);
@@ -180,9 +191,11 @@ public class GlobalEventManager : MonoBehaviour
 
         EvtSendEvent?.Invoke("ads_reward_complete", pa);
     }
-    #endregion
+#endif
+#endregion
 
-    #region Tracking Currency
+#region Tracking Currency
+#if USE_FIREBASE
     public void OnSpendCurrency(string curName, long value, string itemName)
     {
         Parameter[] pa = new Parameter[]
@@ -206,5 +219,6 @@ public class GlobalEventManager : MonoBehaviour
 
         EvtSendEvent?.Invoke("earn_virtual_currency", pa);
     }
-    #endregion
+#endif
+#endregion
 }

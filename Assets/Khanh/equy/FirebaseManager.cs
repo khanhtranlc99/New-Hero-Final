@@ -1,16 +1,19 @@
-﻿using Firebase;
-using Firebase.Analytics;
+﻿
 using System;
 using System.Collections;
 using System.Collections.Generic;
+#if USE_FIREBASE
 using Firebase.Extensions;
 using Firebase.RemoteConfig;
+using Firebase;
+using Firebase.Analytics;
+#endif
 using UnityEngine;
 
 public class FirebaseManager : MonoBehaviour
 {
     private const string TAG = "[FIREBASE]";
-    #region Instance
+#region Instance
     private static FirebaseManager instance;
     public static FirebaseManager Instance
     {
@@ -30,17 +33,19 @@ public class FirebaseManager : MonoBehaviour
 
     public static bool Exist => instance != null;
 
-    #endregion
-    
-    #region Inspector Variables
-    #endregion
+#endregion
 
-    #region Member Variables
+#region Inspector Variables
+#endregion
+
+#region Member Variables
+#if USE_FIREBASE
     public FirebaseApp app;
+#endif
     private bool isOk = false;
-    #endregion
+#endregion
     
-    #region Unity Methods
+#region Unity Methods
 
     private void Awake()
     {
@@ -54,23 +59,28 @@ public class FirebaseManager : MonoBehaviour
 
     private void Start()
     {
+#if USE_FIREBASE
         GlobalEventManager.Instance.EvtSendEvent += SendEvent;
         GlobalEventManager.Instance.EvtUpdateUserProperties += SetUserPropeties;
+#endif
         Init();
     }
 
     private void OnDestroy()
     {
+#if USE_FIREBASE
         GlobalEventManager.Instance.EvtSendEvent -= SendEvent;
         GlobalEventManager.Instance.EvtUpdateUserProperties -= SetUserPropeties;
+#endif
     }
 
-    #endregion
+#endregion
 
-    #region Public Methods
+#region Public Methods
     public void Init()
     {
         Debug.Log(TAG+" Init");
+#if USE_FIREBASE
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
         {
             var dependencyStatus = task.Result;
@@ -84,10 +94,12 @@ public class FirebaseManager : MonoBehaviour
                 Debug.Log(TAG+" Init fail");
             }
         });
+#endif
     }
-    #endregion
+#endregion
 
-    #region Private Methods
+#region Private Methods
+#if USE_FIREBASE
     private void SendEvent(string eName, Parameter[] parameters)
     {
         if(!isOk)
@@ -102,15 +114,17 @@ public class FirebaseManager : MonoBehaviour
         if(!isOk)
             return;       
     }
-    #endregion
+#endif
+#endregion
 
-    #region Remote Config
+#region Remote Config
     private void FetchValue()
     {
      
     
         SetDefaultValue();
         TimeSpan time = new TimeSpan(0, 0, 10);
+#if USE_FIREBASE
         FirebaseRemoteConfig.DefaultInstance.FetchAsync(time).ContinueWithOnMainThread(task =>
         {
           
@@ -144,10 +158,12 @@ public class FirebaseManager : MonoBehaviour
                 
             }
         });
+#endif
     }
 
     private void SetDefaultValue()
     {
+#if USE_FIREBASE
         if (PlayerPrefs.GetInt("SetDefaultConfig", 0) == 0)
         {
             Dictionary<string, object> defaults = new Dictionary<string, object>();
@@ -156,8 +172,9 @@ public class FirebaseManager : MonoBehaviour
             FirebaseRemoteConfig.DefaultInstance.SetDefaultsAsync(defaults);
             PlayerPrefs.SetInt("SetDefaultConfig", 1);
         }
+#endif
     }
-    #endregion
+#endregion
     
 }
 
